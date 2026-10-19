@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: livros-postgres
+    environment:
+      POSTGRES_DB: livros_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - "5432:5432"
